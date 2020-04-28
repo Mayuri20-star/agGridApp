@@ -93,13 +93,13 @@ onCellClicked(iVal){
           if(this.updatedRowObj.EmpName != this.prevRowObj.EmpName){
             rowNode.setDataValue('EmpName',this.updatedRowObj.EmpName);  //To update 
           }
-          try{
-            var httpOptions = {headers : new HttpHeaders({'Content-Type' : 'application/json'})};
-            this.http.put(`${this.dataUrl}/${this.updatedRowObj.EmpId}`,this.updatedRowObj,httpOptions)
-          }
-          catch(error){
-            console.log("Error is =====",error);
-          }
+          // try{
+          //   var httpOptions = {headers : new HttpHeaders({'Content-Type' : 'application/json'})};
+          //   this.http.put(`${this.dataUrl}/${this.updatedRowObj.EmpId}`,this.updatedRowObj,httpOptions)
+          // }
+          // catch(error){
+          //   console.log("Error is =====",error);
+          // }
                     
 
            //To update 'Post' cell
