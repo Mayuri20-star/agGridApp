@@ -1,0 +1,6 @@
+[
+    { "EmpId": "01", "EmpName": "Mayuri Gharge", "Post": "UI Developer" },
+    { "EmpId": "02", "EmpName": "Rashmi Chaudhari", "Post": "QA" },
+    { "EmpId": "03", "EmpName": "Nikita Kheratkar", "Post": "HR" },
+    { "EmpId": "04", "EmpName": "Renuka Kharade", "Post": "Java developer" }
+ ]

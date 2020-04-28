@@ -1,0 +1,40 @@
+<div><h5 style="text-align: center;font-weight: 600;font-size: 16px;">Employee  Data</h5></div>
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <td>Id</td>
+            <td *ngIf="!editFlag">{{data.EmpId}}</td>
+            <td *ngIf="editFlag">
+                <mat-form-field class="example-full-width">
+                    <input matInput [(ngModel)]="data.EmpId">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td *ngIf="!editFlag">{{data.EmpName}}</td>
+            <td *ngIf="editFlag">
+                <mat-form-field class="example-full-width">
+                    <input matInput [(ngModel)]="data.EmpName">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>Post</td>
+            <td *ngIf="!editFlag">{{data.Post}}</td>
+            <td *ngIf="editFlag">
+                <mat-form-field class="example-full-width">
+                    <input matInput [(ngModel)]="data.Post">
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-warning" (click)="editFunc()">Edit</button>
+        <button type="button" class="btn btn-success" (click)="saveFunc()">Save</button>
+        <!-- <button type="button" class="btn btn-primary" (click)="closeFun()">Close</button> -->
+        <button mat-button [mat-dialog-close]="data" (click)="closeFun(data)">Close</button>
+    </div>
+    
+    
+</div>
